@@ -21,8 +21,8 @@ jobs:
         with:
           node-version: '18'
   install:  
-    needs: build
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Install dependencies
         run: npm install
