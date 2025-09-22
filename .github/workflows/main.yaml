@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: haridev003/node-app
+      IMAGE_NAME: haridev003/nodeapp
       NODE_ENV: production
 
     steps:
