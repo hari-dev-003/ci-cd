@@ -8,12 +8,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    env:
+      IMAGE_NAME: haridev003/nodeapp
+      NODE_ENV: production
 
     steps:
-      - name    env:
-      IMAGE_NAME: haridev003/nodeapp
-      NODE_ENV: production: Checkout code
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Set up Node.js
